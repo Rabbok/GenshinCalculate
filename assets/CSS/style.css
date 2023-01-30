@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    margin-bottom: 200px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+}
+
+.default-container {
+    max-width: 1770px;
+    margin: auto;
+}
+
+.header-nav-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+.header__links {
+    display: flex;
+    list-style: none;
+}
+
+.header__logo {
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.header__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 36px;
+}

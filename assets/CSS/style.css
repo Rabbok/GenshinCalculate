@@ -6,6 +6,13 @@
 
 .body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    grid-template-rows: auto auto 200px;
+    grid-template-columns: 100%;
+    background-image: url(/assets/img/Nilou-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .header {
@@ -13,7 +20,6 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: black;
 }
 
 .default-container {
@@ -34,6 +40,10 @@
     list-style: none;
 }
 
+.main {
+    height: 100vh;
+}
+
 .header__logo {
     font-size: 2rem;
     color: #FFFFFF;
@@ -47,4 +57,24 @@
     color: #FFFFFF;
     text-shadow: 1px 1px 1px black;
     margin-left: 36px;
+}
+
+.footer__paragraph {
+    color: #C6C6C6;
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin: 20px;
+}
+
+.social-madia__img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.social-madia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

@@ -40,51 +40,128 @@
             <ul class="main-nav default-container">
                 <li class="main-nav__item">
                     <a href="">
-                        <img class="main-nav__img" src="/assets/img/button_bg1.png" alt="">
+                        <img class="main-nav__img" src="assets/img/button_bg1.png" alt="">
                         <span class="main-nav__text">CALCULATOR</span>
                     </a>
                 </li>
 
                 <li class="main-nav__item">
                     <a href="">
-                        <img class="main-nav__img" src="/assets/img/button_bg2.png" alt="">
+                        <img class="main-nav__img" src="assets/img/button_bg2.png" alt="">
                         <span class="main-nav__text">FOR BEGINNERS</span>
                     </a>
                 </li>
 
                 <li class="main-nav__item">
                     <a href="">
-                        <img class="main-nav__img" src="/assets/img/button_bg3.png" alt="">
+                        <img class="main-nav__img" src="assets/img/button_bg3.png" alt="">
                         <span class="main-nav__text">CHARACTERS</span>
                     </a>
                 </li>
 
                 <li class="main-nav__item">
                     <a href=""></a>
-                        <img class="main-nav__img" src="/assets/img/button_bg4.png" alt="">
+                        <img class="main-nav__img" src="assets/img/button_bg4.png" alt="">
                         <span class="main-nav__text">OTHER</span>
                     </a>
                 </li>
             </ul>
         </section>
 
-        <!-- <section class="calculator">
-            <div class="finaly-stats">
-                <div class="character-weapon">
-                    <div class="character">
-                        <img src="" alt="">
-                        <button></button>
+        <section class="calculator default-container">
+            <ul class="calculator-nav">
+                <li class="calculator-nav__item">
+                    <button class="calculator-nav__button">Stats</button>
+                </li>
+
+                <li class="calculator-nav__item">
+                    <button class="calculator-nav__button">Changes</button>
+                </li>
+
+                <li class="calculator-nav__item">
+                    <button class="calculator-nav__button">Team</button>
+                </li>
+
+                <li class="calculator-nav__item">
+                    <button class="calculator-nav__button">Rotation</button>
+                </li>
+
+                <li class="calculator-nav__item">
+                    <button class="calculator-nav__button">Food & buffs</button>
+                </li>
+                
+                <li class="calculator-nav__item">
+                    <button class="calculator-nav__button">Top weapon</button>
+                </li>
+            </ul>
+
+            <div class="stats-block default-block">
+                <div class="finaly-stats changes-block">
+                    <div class="character-weapon">
+                        <img src="assets/img/character_icons/Dehya_icon.png" alt="">
+                        <button class="character-weapon__button character-button">CHANGE</button>
+                        <img src="assets/img/weapon_icons/Redhorn.png" alt="">
+                        <button class="character-weapon__button weapon-button">CHANGE</button>
                     </div>
 
-                    <div class="weapon">
-                        <img src="" alt="">
-                        <button></button>
+                    <div class="stats">
+                        <p class="artifact-stats__p">ARTIFACT BONUSES</p>
+                        <div class="artifact-stats">
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="atk">ATK</label>
+                                <input class="stats__input" name="atk" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="atk">DEF</label>
+                                <input class="stats__input" name="atk" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="atk">HP</label>
+                                <input class="stats__input" name="atk" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="atk">EM</label>
+                                <input class="stats__input" name="atk" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="atk">ER</label>
+                                <input class="stats__input" name="atk" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="atk">CR</label>
+                                <input class="stats__input" name="atk" type="text">
+                            </form>
+
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="atk">CD</label>
+                                <input class="stats__input" name="atk" type="text">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="changes changes-block">
+                    <div class="character-weapon">
+                        <div class="character">
+                            <img src="" alt="">
+                            <button></button>
+                        </div>
+            
+                        <div class="weapon">
+                            <img src="" alt="">
+                            <button></button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="rotation"></div>
-        </section> -->
+        </section>
     </main>
 
     <footer class="footer">
@@ -103,6 +180,7 @@
         </ul>
         <p class="footer__paragraph">© All rights reserved by miHoYo. Other properties belong to their respective owners</p>
     </footer>
-
+    
+    <script src="assets/scripts/script.js" defer></script>
 </body> 
 </html>

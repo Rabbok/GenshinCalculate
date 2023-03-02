@@ -75,11 +75,11 @@
                 </li>
 
                 <li class="calculator-nav__item">
-                    <button class="calculator-nav__button">Changes</button>
+                    <button class="calculator-nav__button">Team</button>
                 </li>
 
                 <li class="calculator-nav__item">
-                    <button class="calculator-nav__button">Team</button>
+                    <button class="calculator-nav__button">Changes</button>
                 </li>
 
                 <li class="calculator-nav__item">
@@ -105,7 +105,7 @@
                     </div>
 
                     <div class="stats">
-                        <p class="artifact-stats__p">ARTIFACT BONUSES</p>
+                        <p class="stats__p">ARTIFACT BONUSES</p>
                         <div class="artifact-stats">
                             <form class="stats__form" action="">
                                 <label class="stats__lbl" for="atk">ATK</label>
@@ -113,49 +113,140 @@
                             </form>
                             
                             <form class="stats__form" action="">
-                                <label class="stats__lbl" for="atk">DEF</label>
-                                <input class="stats__input" name="atk" type="text">
+                                <label class="stats__lbl" for="def">DEF</label>
+                                <input class="stats__input" name="def" type="text">
                             </form>
                             
                             <form class="stats__form" action="">
-                                <label class="stats__lbl" for="atk">HP</label>
-                                <input class="stats__input" name="atk" type="text">
+                                <label class="stats__lbl" for="hp">HP</label>
+                                <input class="stats__input" name="hp" type="text">
                             </form>
                             
                             <form class="stats__form" action="">
-                                <label class="stats__lbl" for="atk">EM</label>
-                                <input class="stats__input" name="atk" type="text">
+                                <label class="stats__lbl" for="em">EM</label>
+                                <input class="stats__input" name="em" type="text">
                             </form>
                             
                             <form class="stats__form" action="">
-                                <label class="stats__lbl" for="atk">ER</label>
-                                <input class="stats__input" name="atk" type="text">
+                                <label class="stats__lbl" for="er">ER</label>
+                                <input class="stats__input" name="er" type="text">
                             </form>
                             
                             <form class="stats__form" action="">
-                                <label class="stats__lbl" for="atk">CR</label>
-                                <input class="stats__input" name="atk" type="text">
+                                <label class="stats__lbl" for="cr">CR</label>
+                                <input class="stats__input" name="cr" type="text">
                             </form>
 
                             <form class="stats__form" action="">
-                                <label class="stats__lbl" for="atk">CD</label>
+                                <label class="stats__lbl" for="cd">CD</label>
+                                <input class="stats__input" name="cd" type="text">
+                            </form>
+                        </div>
+
+                        <p class="stats__p">OTHER STATS</p>
+                        <div class="artifact-stats">
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="lvl-c">LVL (C)</label>
+                                <input class="stats__input" name="lvl-c" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="lvl-v">LVL (W)</label>
+                                <input class="stats__input" name="lvl-v" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="w-rank">W rank</label>
+                                <input class="stats__input" name="w-renk" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="cup">CUP</label>
+                                <input class="stats__input" name="cup" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="clock">CLOCK</label>
+                                <input class="stats__input" name="clock" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="clock">CROWN</label>
+                                <input class="stats__input" name="clock" type="text">
+                            </form>
+                        </div>
+
+                        <p class="stats__p">FINAL STATS</p>
+                        <div class="artifact-stats">
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="atk">ATK</label>
                                 <input class="stats__input" name="atk" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="def">DEF</label>
+                                <input class="stats__input" name="def" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="hp">HP</label>
+                                <input class="stats__input" name="hp" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="em">EM</label>
+                                <input class="stats__input" name="em" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="er">ER</label>
+                                <input class="stats__input" name="er" type="text">
+                            </form>
+                            
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="cr">CR</label>
+                                <input class="stats__input" name="cr" type="text">
+                            </form>
+
+                            <form class="stats__form" action="">
+                                <label class="stats__lbl" for="cd">CD</label>
+                                <input class="stats__input" name="cd" type="text">
                             </form>
                         </div>
                     </div>
                 </div>
 
-                <div class="changes changes-block">
-                    <div class="character-weapon">
+                <div class="team changes-block">
+                    <p class="team__paragraph">Characters</p>
+                    <div class="team-characters">
                         <div class="character">
-                            <img src="" alt="">
-                            <button></button>
+                            <img src="assets/img/character_icons/Dehya_icon.png" alt="">
+                            <button class="character-weapon__button character-button">CHANGE</button>
                         </div>
-            
-                        <div class="weapon">
-                            <img src="" alt="">
-                            <button></button>
+
+                        <div class="character">
+                            <img src="assets/img/character_icons/Dehya_icon.png" alt="">
+                            <button class="character-weapon__button character-button">CHANGE</button>
                         </div>
+
+                        <div class="character">
+                            <img src="assets/img/character_icons/Dehya_icon.png" alt="">
+                            <button class="character-weapon__button character-button">CHANGE</button>
+                        </div>
+                    
+                        <div class="character">
+                            <img src="assets/img/character_icons/Dehya_icon.png" alt="">
+                            <button class="character-weapon__button character-button">CHANGE</button>
+                        </div>
+                    </div>
+
+                    <div class="team-stats">
+                        <button class="open-button">Team sets</button>
+                        <button class="open-button">Team weapon</button>
+                        <button class="open-button">1 character</button>
+                        <button class="open-button">2 character</button>
+                        <button class="open-button">3 character</button>
+                        <button class="open-button">Other buffs</button>
                     </div>
                 </div>
             </div>

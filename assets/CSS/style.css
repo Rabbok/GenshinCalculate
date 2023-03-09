@@ -186,6 +186,7 @@
     font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 1px black;
+    margin-bottom: 20px;
 }
 
 .stats__form {
@@ -230,7 +231,7 @@
     display: none;
 }
 
-.team__paragraph {
+.def__paragraph {
     font-size: 0.8rem;
     color: var(--white);
     text-shadow: 1px 1px 1px black;
@@ -249,9 +250,10 @@
 .open-button {
     background-color: #6F6F6F;
     font-size: 0.8rem;
-    color: var(--white);
+    color: #ABABAB;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 1px black;
     border: 1px solid black;
     width: 600px;
 }
@@ -260,4 +262,46 @@
     margin: 20px auto;
     display: flex;
     flex-direction: column;
+}
+
+.rotation {
+    display: none;
+}
+
+.rotation__scale {
+    background-color: #6F6F6F;
+    font-size: 0.8rem;
+    color: #ABABAB;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    border: 1px solid black;
+    width: 600px;
+}
+
+.rotation__scales {
+    margin: auto auto 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weapon-block {
+    display: flex;
+    justify-content: space-around;
+    background-color: #6F6F6F;
+    border: 1px solid black;
+    width: 600px;
+    margin: auto;
+}
+
+.weapon-block:last-child {
+    margin-bottom: 20px;
+}
+
+.weapon-block__item {
+    font-size: 0.8rem;
+    color: #ABABAB;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 1px black;
 }

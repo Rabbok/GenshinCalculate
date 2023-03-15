@@ -128,7 +128,7 @@
 }
 
 .calculator-nav {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     display: grid;
     grid-template-columns: repeat(auto-fit, 50px);
     gap: 50px;
@@ -154,8 +154,12 @@
 .stats-block {
     max-width: 1000px;
     height: 100%;
-    margin: 30px auto;
+    margin: 30px auto auto;
     background-color: var(--dark-gray);
+}
+
+.changes-block {
+    padding: 20px;
 }
 
 .changes {
@@ -166,7 +170,6 @@
 }
 
 .finaly-stats {
-    padding: 20px;
     display: grid;
     grid-template-columns: 100px auto;
     gap: 20px;
@@ -209,6 +212,9 @@
 .stats__input {
     width: 80px;
     background-color: #6F6F6F;
+    padding: 2px;
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
 }
 
 .stats__lbl {
@@ -231,12 +237,12 @@
     display: none;
 }
 
-.def__paragraph {
+.def-paragraph {
     font-size: 0.8rem;
     color: var(--white);
     text-shadow: 1px 1px 1px black;
     text-align: center;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .team-characters {
@@ -303,5 +309,46 @@
     color: #ABABAB;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+.weapon-tir {
+    display: none;
+}
+
+.skils-dmg {
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    background-color: var(--dark-gray);
+    padding: 20px;
+}
+
+.dmg-lbl {
+    font-size: 0.8rem;
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 10px;
+}
+
+.rotation-dmg {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.damage-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px 100px;
+}
+
+.dmg-p {
+    background-color: #6F6F6F;
+    padding: 5px;
+    font-size: 0.6rem;
+    height: 100%;
+    width: 150px;
+    color: var(--white);
     text-shadow: 1px 1px 1px black;
 }

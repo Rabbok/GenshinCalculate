@@ -1,7 +1,8 @@
 :root {
-    --gray: var(--gray);
+    --gray: #6F6F6F;
     --dark-gray: #1C1C1C;
     --white: #FFFFFF;
+    --green: #1DDD31;
 }
 
 * {
@@ -27,7 +28,7 @@
 
 .header {
     width: 100%;
-    position: sticky;
+    position: absolute;
     top: 0;
     z-index: 1;
 }
@@ -181,8 +182,9 @@
 }
 
 .character-weapon__button {
+    cursor: pointer;
     margin: 0px auto;
-    background-color: #6F6F6F;
+    background-color: var(--gray);
     height: 20px;
     width: 100px;
     color: var(--white);
@@ -211,10 +213,21 @@
 
 .stats__input {
     width: 80px;
-    background-color: #6F6F6F;
+    background-color: var(--gray);
     padding: 2px;
     color: var(--white);
     text-shadow: 1px 1px 1px black;
+}
+
+.stats__button {
+    cursor: pointer;
+    width: 80px;
+    height: 20px;
+    background-color: var(--gray);
+    padding: 2px;
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
+    margin-right: 10px;
 }
 
 .stats__lbl {
@@ -245,6 +258,14 @@
     margin-bottom: 20px;
 }
 
+.art-change-paragraph {
+    font-size: 0.8rem;
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .team-characters {
     display: grid;
     grid-template-columns: repeat(auto-fit, 100px);
@@ -254,9 +275,9 @@
 }
 
 .open-button {
-    background-color: #6F6F6F;
     font-size: 0.8rem;
     color: #ABABAB;
+    background-color: var(--gray);
     text-align: center;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 1px black;
@@ -275,7 +296,7 @@
 }
 
 .rotation__scale {
-    background-color: #6F6F6F;
+    background-color: var(--gray);
     font-size: 0.8rem;
     color: #ABABAB;
     text-align: center;
@@ -294,7 +315,7 @@
 .weapon-block {
     display: flex;
     justify-content: space-around;
-    background-color: #6F6F6F;
+    background-color: var(--gray);
     border: 1px solid black;
     width: 600px;
     margin: auto;
@@ -344,11 +365,64 @@
 }
 
 .dmg-p {
-    background-color: #6F6F6F;
+    background-color: var(--gray);
     padding: 5px;
     font-size: 0.6rem;
     height: 100%;
     width: 150px;
     color: var(--white);
     text-shadow: 1px 1px 1px black;
+}
+
+.character-change {
+    display: none;
+    grid-template-columns: repeat(auto-fit, 70px);
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.character-change__character {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.weapon-change {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 70px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.weapon-change__character {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.def-img {
+    height: 100%;
+    width: 100%;
+}
+
+.artifacts {
+    display: none;
+}
+
+.other-stats {
+    display: flex;
+    justify-content: center;
+}
+
+.r-change {
+    margin: 20px;
+}
+
+.art-change {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 80px);
+    justify-content: center;
+    gap: 40px;
+    margin: 20px;
 }

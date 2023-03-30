@@ -4,7 +4,8 @@ const changeBlock = document.querySelector('.character-change')
 const statsChangeButtons = document.querySelectorAll('.stats__button')
 
 let activeBlock = 0;
-const activeButton = 0;
+
+//Function for changing parameters in the stats block
 
 const statsButtonHandler = (event) => {
     const parentElement = event.target.parentNode;
@@ -14,20 +15,17 @@ const statsButtonHandler = (event) => {
     event.target.style.backgroundColor = 'var(--green)';
 }
 
-const reset = () => {
+//Function for changing calculator blocks
+
+const reset = (event) => {
     calculatorBlocks.forEach(calculatorBlock => calculatorBlock.style.display = 'none');
     calculatorBlocks[activeBlock].style.display = 'grid';
     changeBlock.style.display = 'none';
 }
 
-calculatorNavButtons.forEach((item, index) => {
-    item.addEventListener('click', () => {
-        activeBlock = index;
-        reset();
-    });
-});
+//Function for changing character
 
-const characterChange = () => {
+const characterChange = (event) => {
     changeBlock.style.display = 'grid';
     calculatorBlocks[activeBlock].style.display = 'none';
 }
@@ -37,6 +35,12 @@ const characterChangeReset = () => {
     calculatorBlocks[activeBlock].style.display = 'grid';
 }
 
+calculatorNavButtons.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        activeBlock = index;
+        reset()
+    })
+})
 
 const charcterButton = document.querySelectorAll('.character-weapon__button');
 charcterButton.forEach((item) => {

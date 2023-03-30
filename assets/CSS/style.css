@@ -18,7 +18,7 @@
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     display: grid;
-    grid-template-rows: auto auto 200px;
+    grid-template-rows: auto auto auto;
     grid-template-columns: 100%;
     background-image: url(../img/dehya_bg.png);
     background-repeat: no-repeat;
@@ -425,4 +425,33 @@
     justify-content: center;
     gap: 40px;
     margin: 20px;
+}
+
+.artifact-set {
+    display: flex;
+    width: 600px;
+    height: 70px;
+    background-color: var(--dark-gray);
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.artifact-img {
+    height: 50px;
+    width: 50px;
+    margin: auto 10px;
+}
+
+.artifact-description {
+    margin: auto 0;
+}
+
+.artifact-description__paragraph {
+    margin: 10px;
+    font-size: 0.5rem;
+    color: #C6C6C6;
+}
+
+.team-stats__block {
+    display: none;
 }

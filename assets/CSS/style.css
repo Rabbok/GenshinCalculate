@@ -275,6 +275,7 @@
 }
 
 .open-button {
+    cursor: pointer;
     font-size: 0.8rem;
     color: #ABABAB;
     background-color: var(--gray);
@@ -439,14 +440,16 @@
 .artifact-img {
     height: 50px;
     width: 50px;
-    margin: auto 10px;
+    margin: auto 0 auto 10px;
 }
 
 .artifact-description {
     margin: auto 0;
+    height: 50px;
 }
 
 .artifact-description__paragraph {
+    user-select: none;
     margin: 10px;
     font-size: 0.5rem;
     color: #C6C6C6;

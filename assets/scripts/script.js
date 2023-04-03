@@ -30,7 +30,7 @@ const reset = () => {
 
 //Functions for changing character
 
-const characterChange = (event) => {
+const characterChange = () => {
     changeBlock.style.display = 'grid';
     calculatorBlocks[activeBlock].style.display = 'none';
 }

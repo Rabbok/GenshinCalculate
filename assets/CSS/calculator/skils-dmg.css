@@ -1,0 +1,36 @@
+.skils-dmg {
+    max-width: 62.5rem;
+    height: 100%;
+    margin: auto;
+    background-color: var(--dark-gray);
+    padding: 1.25rem;
+}
+
+.dmg-lbl {
+    font-size: 0.8rem;
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 0.6rem;
+}
+
+.rotation-dmg {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.25rem;
+}
+
+.damage-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem 3rem;
+}
+
+.dmg-p {
+    background-color: var(--gray);
+    padding: 0.3rem;
+    font-size: 0.6rem;
+    height: 100%;
+    width: 10rem;
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
+}

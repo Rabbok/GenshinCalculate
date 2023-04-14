@@ -1,0 +1,19 @@
+.rotation {
+    display: none;
+}
+
+.rotation__scale {
+    background-color: var(--gray);
+    font-size: 0.8rem;
+    color: var(--light-gray);
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    border: 0.125rem solid black;
+    width: 37.5rem;
+}
+
+.rotation__scales {
+    margin: auto auto 1.25rem;
+    display: flex;
+    flex-direction: column;
+}

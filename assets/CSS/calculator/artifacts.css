@@ -1,0 +1,49 @@
+.artifacts {
+    display: none;
+}
+
+.art-change {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 6rem);
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 1.25rem;
+}
+
+.artifact-set {
+    display: flex;
+    width: 37.5rem;
+    height: 4.5rem;
+    background-color: var(--dark-gray);
+    cursor: pointer;
+    border: 0.125rem solid black;
+}
+
+.artifact-set__img {
+    height: 3rem;
+    width: 3rem;
+    margin: auto 0 auto 0.6rem;
+}
+
+.artifact-set__description {
+    margin: auto 0;
+    height: 3rem;
+    background-color: var(--dark-gray);
+}
+
+.artifact-set__paragraph {
+    user-select: none;
+    margin: 0.6rem;
+    font-size: 0.5rem;
+    color: var(--light-gray);
+}
+
+.art-change__button {
+    cursor: pointer;
+    width: 5rem;
+    height: 1.25rem;
+    background-color: var(--gray);
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
+    margin-right: 0.6rem
+}

@@ -1,0 +1,23 @@
+.weapon-block {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--gray);
+    border: 0.125rem solid black;
+    width: 37.5rem;
+    margin: auto;
+}
+
+.weapon-block:last-child {
+    margin-bottom: 1.25rem;
+}
+
+.weapon-block__item {
+    font-size: 0.8rem;
+    color: var(--light-gray);
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+.weapon-tir {
+    display: none;
+}

@@ -1,0 +1,11 @@
+.social-media__img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.6rem;
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

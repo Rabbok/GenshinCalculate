@@ -71,14 +71,14 @@
                     <div class="stats">
                         <div class="other-stats">
                             <form class="stats-form" action="">
-                                <div class="stats-form-block">
+                                <div class="stats-form__container">
                                     <label class="stats-form__lbl" for="lvl-c">LVL (C)</label>
-                                    <input class="stats-form__input" name="lvl-c" type="text" autocomplete="off">
+                                    <input class="stats-form__input" id="lvl-c" name="lvl-c" type="text" autocomplete="off">
                                 </div>
                 
-                                <div class="stats-form-block">
-                                    <label class="stats-form__lbl" for="lvl-v">LVL (W)</label>
-                                    <input class="stats-form__input" name="lvl-v" type="text" autocomplete="off">
+                                <div class="stats-form__container">
+                                    <label class="stats-form__lbl" for="lvl-w">LVL (W)</label>
+                                    <input class="stats-form__input" id="lvl-c" name="lvl-w" type="text" autocomplete="off">
                                 </div>
                             </form>
                             <div class="refinement">
@@ -94,80 +94,81 @@
                         <p class="stats__paragraph">FINAL STATS</p>
                         <div class="artifact-stats">
                             <form class="stats-form" action="">
-                                <div class="stats-form-block">
-                                    <label class="stats-form__lbl" for="atk">ATK</label>
-                                    <input class="stats-form__input" id="atk" name="atk" type="text" autocomplete="off">
+                                <div class="stats-form__container">
+                                    <label class="stats-form__lbl" for="final-atk">ATK</label>
+                                    <input class="stats-form__input" id="final-atk" name="atk" type="text" autocomplete="off">
                                 </div>
                 
-                                <div class="stats-form-block">
-                                    <label class="stats-form__lbl" for="def">DEF</label>
-                                    <input class="stats-form__input" id="def" name="def" type="text" autocomplete="off">
+                                <div class="stats-form__container">
+                                    <label class="stats-form__lbl" for="final-def">DEF</label>
+                                    <input class="stats-form__input" id="final-def" name="def" type="text" autocomplete="off">
                                 </div>
                 
-                                <div class="stats-form-block">
-                                    <label class="stats-form__lbl" for="hp">HP</label>
-                                    <input class="stats-form__input" id="hp" name="hp" type="text" autocomplete="off">
+                                <div class="stats-form__container">
+                                    <label class="stats-form__lbl" for="final-hp">HP</label>
+                                    <input class="stats-form__input" id="final-hp" name="hp" type="text" autocomplete="off">
                                 </div>
                 
-                                <div class="stats-form-block">
-                                    <label class="stats-form__lbl" for="em">EM</label>
-                                    <input class="stats-form__input" id="em" name="em" type="text" autocomplete="off">
+                                <div class="stats-form__container">
+                                    <label class="stats-form__lbl" for="final-em">EM</label>
+                                    <input class="stats-form__input" id="final-em" name="em" type="text" autocomplete="off">
                                 </div>
                 
-                                <div class="stats-form-block">
-                                    <label class="stats-form__lbl" for="er">ER</label>
-                                    <input class="stats-form__input" id="er" name="er" type="text" autocomplete="off">
+                                <div class="stats-form__container">
+                                    <label class="stats-form__lbl" for="final-er">ER</label>
+                                    <input class="stats-form__input" id="final-er" name="er" type="text" autocomplete="off">
                                 </div>
                 
-                                <div class="stats-form-block">
-                                    <label class="stats-form__lbl" for="cr">CR</label>
-                                    <input class="stats-form__input" id="cr" name="cr" type="text" autocomplete="off">
+                                <div class="stats-form__container">
+                                    <label class="stats-form__lbl" for="final-cr">CR</label>
+                                    <input class="stats-form__input" id="final-cr" name="cr" type="text" autocomplete="off">
                                 </div>
                 
-                                <div class="stats-form-block">
-                                    <label class="stats-form__lbl" for="cd">CD</label>
-                                    <input class="stats-form__input" id="cd" name="cd" type="text" autocomplete="off">
+                                <div class="stats-form__container">
+                                    <label class="stats-form__lbl" for="final-cd">CD</label>
+                                    <input class="stats-form__input" id="final-cd" name="cd" type="text" autocomplete="off">
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
+
                 <div class="artifacts changes-block">
                     <p class="stats__paragraph">ARTIFACT BONUSES</p>
                     <div class="artifact-stats">
                         <form class="stats-form" action="">
-                            <div class="stats-form-block">
-                                <label class="stats-form__lbl" for="atk">ATK</label>
+                            <div class="stats-form__container">
+                                <label class="stats-form__lbl" for="artifacts-atk">ATK</label>
                                 <input class="stats-form__input" id="atk" name="atk" type="text" autocomplete="off">
                             </div>
                 
-                            <div class="stats-form-block">
-                                <label class="stats-form__lbl" for="def">DEF</label>
-                                <input class="stats-form__input" id="def" name="def" type="text" autocomplete="off">
+                            <div class="stats-form__container">
+                                <label class="stats-form__lbl" for="artifacts-def">DEF</label>
+                                <input class="stats-form__input" id="artifacts-def" name="def" type="text" autocomplete="off">
                             </div>
-                            <div class="stats-form-block">
-                                <label class="stats-form__lbl" for="hp">HP</label>
-                                <input class="stats-form__input" id="hp" name="hp" type="text" autocomplete="off">
-                            </div>
-                
-                            <div class="stats-form-block">
-                                <label class="stats-form__lbl" for="em">EM</label>
-                                <input class="stats-form__input" id="em" name="em" type="text" autocomplete="off">
+                            <div class="stats-form__container">
+                                <label class="stats-form__lbl" for="artifacts-hp">HP</label>
+                                <input class="stats-form__input" id="artifacts-hp" name="hp" type="text" autocomplete="off">
                             </div>
                 
-                            <div class="stats-form-block">
-                                <label class="stats-form__lbl" for="er">ER</label>
-                                <input class="stats-form__input" id="er" name="er" type="text" autocomplete="off">
+                            <div class="stats-form__container">
+                                <label class="stats-form__lbl" for="artifacts-em">EM</label>
+                                <input class="stats-form__input" id="artifacts-em" name="em" type="text" autocomplete="off">
                             </div>
                 
-                            <div class="stats-form-block">
-                                <label class="stats-form__lbl" for="cr">CR</label>
-                                <input class="stats-form__input" id="cr" name="cr" type="text" autocomplete="off">
+                            <div class="stats-form__container">
+                                <label class="stats-form__lbl" for="artifacts-er">ER</label>
+                                <input class="stats-form__input" id="artifacts-er" name="er" type="text" autocomplete="off">
                             </div>
                 
-                            <div class="stats-form-block">
-                                <label class="stats-form__lbl" for="cd">CD</label>
-                                <input class="stats-form__input" id="cd" name="cd" type="text" autocomplete="off">
+                            <div class="stats-form__container">
+                                <label class="stats-form__lbl" for="artifacts-cr">CR</label>
+                                <input class="stats-form__input" id="artifacts-cr" name="cr" type="text" autocomplete="off">
+                            </div>
+                
+                            <div class="stats-form__container">
+                                <label class="stats-form__lbl" for="artifacts-cd">CD</label>
+                                <input class="stats-form__input" id="artifacts-cd" name="cd" type="text" autocomplete="off">
                             </div>
                         </form>
                     </div>
@@ -175,29 +176,29 @@
                     <div class="artifact-main-stats">
                         <div class="art-change">
                             <p class="def-paragraph">CROWN</p>
-                            <button class="stats__button">PYRO</button>
-                            <button class="stats__button">HP</button>
-                            <button class="stats__button">ATK</button>
-                            <button class="stats__button">DEF</button>
-                            <button class="stats__button">EM</button>
+                            <button class="art-change__button">PYRO</button>
+                            <button class="art-change__button">HP</button>
+                            <button class="art-change__button">ATK</button>
+                            <button class="art-change__button">DEF</button>
+                            <button class="art-change__button">EM</button>
                         </div>
                 
                         <div class="art-change">
                             <p class="def-paragraph">CROWN</p>
-                            <button class="stats__button">PYRO</button>
-                            <button class="stats__button">HP</button>
-                            <button class="stats__button">ATK</button>
-                            <button class="stats__button">DEF</button>
-                            <button class="stats__button">EM</button>
+                            <button class="art-change__button">PYRO</button>
+                            <button class="art-change__button">HP</button>
+                            <button class="art-change__button">ATK</button>
+                            <button class="art-change__button">DEF</button>
+                            <button class="art-change__button">EM</button>
                         </div>
                 
                         <div class="art-change">
                             <p class="def-paragraph">CROWN</p>
-                            <button class="stats__button">PYRO</button>
-                            <button class="stats__button">HP</button>
-                            <button class="stats__button">ATK</button>
-                            <button class="stats__button">DEF</button>
-                            <button class="stats__button">EM</button>
+                            <button class="art-change__button">PYRO</button>
+                            <button class="art-change__button">HP</button>
+                            <button class="art-change__button">ATK</button>
+                            <button class="art-change__button">DEF</button>
+                            <button class="art-change__button">EM</button>
                         </div>
                     </div>
                 </div>
@@ -230,28 +231,28 @@
                         <button class="open-button">Team sets</button>
                         <div class="team-stats__block team-sets">
                             <div class="artifact-set">
-                                <img class="artifact-img" src="/assets/img/artifacts-icon/item_royal_flora.webp" alt="">
-                                <div class="artifact-description">
-                                    <p class="artifact-description__paragraph">Noblesse Oblige (4-Piece bonus)</p>
-                                    <p class="artifact-description__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
+                                <img class="artifact-set__img" src="assets/img/artifacts-icon/item_royal_flora.webp" alt="">
+                                <div class="artifact-set__description">
+                                    <p class="artifact-set__paragraph">Noblesse Oblige (4-Piece bonus)</p>
+                                    <p class="artifact-set__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
                                         for 12s. This effect cannot stack.</p>
                                 </div>
                             </div>
 
                             <div class="artifact-set">
-                                <img class="artifact-img" src="/assets/img/artifacts-icon/item_royal_flora.webp" alt="">
-                                <div class="artifact-description">
-                                    <p class="artifact-description__paragraph">Noblesse Oblige (4-Piece bonus)</p>
-                                    <p class="artifact-description__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
+                                <img class="artifact-set__img" src="assets/img/artifacts-icon/item_royal_flora.webp" alt="">
+                                <div class="artifact-set__description">
+                                    <p class="artifact-set__paragraph">Noblesse Oblige (4-Piece bonus)</p>
+                                    <p class="artifact-set__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
                                         for 12s. This effect cannot stack.</p>
                                 </div>
                             </div>
 
                             <div class="artifact-set">
-                                <img class="artifact-img" src="/assets/img/artifacts-icon/item_royal_flora.webp" alt="">
-                                <div class="artifact-description">
-                                    <p class="artifact-description__paragraph">Noblesse Oblige (4-Piece bonus)</p>
-                                    <p class="artifact-description__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
+                                <img class="artifact-set__img" src="assets/img/artifacts-icon/item_royal_flora.webp" alt="">
+                                <div class="artifact-set__description">
+                                    <p class="artifact-set__paragraph">Noblesse Oblige (4-Piece bonus)</p>
+                                    <p class="artifact-set__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
                                         for 12s. This effect cannot stack.</p>
                                 </div>
                             </div>
@@ -259,10 +260,10 @@
                         <button class="open-button">Team weapon</button>
                         <div class="team-stats__block team-weapon">
                             <div class="artifact-set">
-                                <img class="artifact-img" src="/assets/img/artifacts-icon/item_royal_flora.webp" alt="">
-                                <div class="artifact-description">
-                                    <p class="artifact-description__paragraph">Noblesse Oblige (4-Piece bonus)</p>
-                                    <p class="artifact-description__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
+                                <img class="artifact-set__img" src="assets/img/artifacts-icon/item_royal_flora.webp" alt="">
+                                <div class="artifact-set__description">
+                                    <p class="artifact-set__paragraph">Noblesse Oblige (4-Piece bonus)</p>
+                                    <p class="artifact-set__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
                                         for 12s. This effect cannot stack.</p>
                                 </div>
                             </div>
@@ -270,10 +271,10 @@
                         <button class="open-button">1 character</button>
                         <div class="team-stats__block team-character-button">
                             <div class="artifact-set">
-                                <img class="artifact-img" src="/assets/img/artifacts-icon/item_royal_flora.webp" alt="">
-                                <div class="artifact-description">
-                                    <p class="artifact-description__paragraph">Noblesse Oblige (4-Piece bonus)</p>
-                                    <p class="artifact-description__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
+                                <img class="artifact-set__img" src="assets/img/artifacts-icon/item_royal_flora.webp" alt="">
+                                <div class="artifact-set__description">
+                                    <p class="artifact-set__paragraph">Noblesse Oblige (4-Piece bonus)</p>
+                                    <p class="artifact-set__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
                                         for 12s. This effect cannot stack.</p>
                                 </div>
                             </div>
@@ -281,10 +282,10 @@
                         <button class="open-button">2 character</button>
                         <div class="team-stats__block team-character-button">
                             <div class="artifact-set">
-                                <img class="artifact-img" src="/assets/img/artifacts-icon/item_royal_flora.webp" alt="">
-                                <div class="artifact-description">
-                                    <p class="artifact-description__paragraph">Noblesse Oblige (4-Piece bonus)</p>
-                                    <p class="artifact-description__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
+                                <img class="artifact-set__img" src="assets/img/artifacts-icon/item_royal_flora.webp" alt="">
+                                <div class="artifact-set__description">
+                                    <p class="artifact-set__paragraph">Noblesse Oblige (4-Piece bonus)</p>
+                                    <p class="artifact-set__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
                                         for 12s. This effect cannot stack.</p>
                                 </div>
                             </div>
@@ -292,10 +293,10 @@
                         <button class="open-button">3 character</button>
                         <div class="team-stats__block team-character -button">
                             <div class="artifact-set">
-                                <img class="artifact-img" src="/assets/img/artifacts-icon/item_royal_flora.webp" alt="">
-                                <div class="artifact-description">
-                                    <p class="artifact-description__paragraph">Noblesse Oblige (4-Piece bonus)</p>
-                                    <p class="artifact-description__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
+                                <img class="artifact-set__img" src="assets/img/artifacts-icon/item_royal_flora.webp" alt="">
+                                <div class="artifact-set__description">
+                                    <p class="artifact-set__paragraph">Noblesse Oblige (4-Piece bonus)</p>
+                                    <p class="artifact-set__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
                                         for 12s. This effect cannot stack.</p>
                                 </div>
                             </div>
@@ -303,10 +304,10 @@
                         <button class="open-button">Other buffs</button>
                         <div class="team-stats__block other-buffs">
                             <div class="artifact-set">
-                                <img class="artifact-img" src="/assets/img/artifacts-icon/item_royal_flora.webp" alt="">
-                                <div class="artifact-description">
-                                    <p class="artifact-description__paragraph">Noblesse Oblige (4-Piece bonus)</p>
-                                    <p class="artifact-description__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
+                                <img class="artifact-set__img" src="assets/img/artifacts-icon/item_royal_flora.webp" alt="">
+                                <div class="artifact-set__description">
+                                    <p class="artifact-set__paragraph">Noblesse Oblige (4-Piece bonus)</p>
+                                    <p class="artifact-set__paragraph">Using an Elemental Burst increases all party members' ATK by 20%
                                         for 12s. This effect cannot stack.</p>
                                 </div>
                             </div>
@@ -379,27 +380,27 @@
                 </div>
 
                 <div class="character-change">
-                    <div class="character character-change__character">
+                    <div class="character-change__character">
                         <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
                     </div>
 
-                    <div class="character character-change__character">
+                    <div class="character-change__character">
                         <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
                     </div>
 
-                    <div class="character character-change__character">
+                    <div class="character-change__character">
                         <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
                     </div>
 
-                    <div class="character character-change__character">
+                    <div class="character-change__character">
                         <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
                     </div>
 
-                    <div class="character character-change__character">
+                    <div class="character-change__character">
                         <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
                     </div>
 
-                    <div class="character character-change__character">
+                    <div class="character-change__character">
                         <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
                     </div>
                 </div>
@@ -439,15 +440,15 @@
 
     <footer class="footer">
         <p class="footer__paragraph">My social media</p>
-        <ul class="social-madia">
-            <li class="social-madia__item">
-                <a class="social-madia__link" href="">
-                    <img class="social-madia__img" src="assets/img/telegramm.svg" alt="">
+        <ul class="social-media">
+            <li class="social-media__item">
+                <a class="social-media__link" href="">
+                    <img class="social-media__img" src="assets/img/telegramm.svg" alt="">
                 </a>
             </li>
-            <li class="social-madia__item">
-                <a class="social-madia__link" href="">
-                    <img class="social-madia__img" src="assets/img/instagramm.svg" alt="">
+            <li class="social-media__item">
+                <a class="social-media__link" href="">
+                    <img class="social-media__img" src="assets/img/instagramm.svg" alt="">
                 </a>
             </li>
         </ul>

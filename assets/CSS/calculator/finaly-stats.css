@@ -1,0 +1,38 @@
+.finaly-stats {
+    display: none;
+    grid-template-columns: 6.25rem auto;
+    gap: 1.25rem;
+}
+
+.character-weapon {
+    display: flex;
+    flex-direction: column;
+}
+
+.character-weapon__button {
+    cursor: pointer;
+    margin: 0rem auto 1.25rem;
+    background-color: var(--gray);
+    height: 1.25rem;
+    width: 6.25rem;
+    color: var(--white);
+    font-size: 0.8rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.refinement__paragraph {
+    font-size: 0.8rem;
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin-bottom: 0.6rem;
+}
+
+.refinement {
+    margin: 1.25rem;
+}
+
+.other-stats {
+    display: flex;
+    justify-content: center;
+}

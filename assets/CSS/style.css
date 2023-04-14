@@ -1,5 +1,13 @@
-@import url(/assets/css/calculatorstyle.css);
-@import url(/assets/css/footerheaderstyle.css);
+@import url(./layout/footer.css);
+@import url(./layout/header.css);
+@import url(./media.css);
+@import url(./calculator/artifacts.css);
+@import url(./calculator/character-change.css);
+@import url(./calculator/finaly-stats.css);
+@import url(./calculator/roration.css);
+@import url(./calculator/skils-dmg.css);
+@import url(./calculator/team.css);
+@import url(./calculator/weapon-tir.css);
 
 :root {
     --gray: #6F6F6F;
@@ -19,8 +27,7 @@
 }
 
 .body {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'RocknRoll One', sans-serif;
+    font-family: 'Roboto', 'RocknRoll One', sans-serif;
     overflow-x: hidden;
     display: grid;
     grid-template-rows: auto auto auto;
@@ -76,6 +83,68 @@
     text-shadow: 1px 1px 1px black;
     text-align: center;
     margin-bottom: 1.25rem;
+}
+
+.stats-block {
+    max-width: 62.5rem;
+    height: 100%;
+    margin: 2rem auto auto;
+    background-color: var(--dark-gray);
+}
+
+.changes-block {
+    padding: 1.25rem;
+}
+
+.stats-form__container {
+    display: grid;
+    margin: 1.25rem;
+}
+
+.stats-form {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.stats__paragraph {
+    font-size: 0.8rem;
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+.stats-form__input {
+    width: 5rem;
+    background-color: var(--gray);
+    padding: 0.25rem;
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
+}
+
+.stats__button {
+    cursor: pointer;
+    width: 5rem;
+    height: 1.25rem;
+    background-color: var(--gray);
+    color: var(--white);
+    text-shadow: 1px 1px 1px black;
+    margin-right: 0.6rem;
+}
+
+.stats-form__lbl {
+    color: var(--white);
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.default-block {
+    border: 0.125rem solid black;
+}
+
+.def-img {
+    height: 100%;
+    width: 100%;
 }
 
 .active-element {

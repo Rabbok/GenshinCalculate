@@ -62,7 +62,7 @@
             <div class="stats-block default-block">
                 <div class="finaly-stats changes-block active-block">
                     <div class="character-weapon">
-                        <img src="assets/img/character-icons/dehya_icon.png" alt="">
+                        <img src='assets/img/character-icons/ganyu-icon.png' alt="" class="character-img">
                         <button class="character-weapon__button character-button">CHANGE</button>
                         <img src="assets/img/weapon-icons/redhorn.png" alt="">
                         <button class="character-weapon__button weapon-button">CHANGE</button>
@@ -73,21 +73,21 @@
                             <form class="stats-form" action="">
                                 <div class="stats-form__container">
                                     <label class="stats-form__lbl" for="lvl-c">LVL (C)</label>
-                                    <input class="stats-form__input" id="lvl-c" name="lvl-c" type="text" autocomplete="off">
+                                    <input class="stats-form__input" min="1" max="90" id="lvl-c" name="lvl-c" type="number" autocomplete="off">
                                 </div>
                 
                                 <div class="stats-form__container">
                                     <label class="stats-form__lbl" for="lvl-w">LVL (W)</label>
-                                    <input class="stats-form__input" id="lvl-c" name="lvl-w" type="text" autocomplete="off">
+                                    <input class="stats-form__input" min="1" max="90" id="lvl-w" name="lvl-w" type="number" autocomplete="off">
                                 </div>
                             </form>
                             <div class="refinement">
                                 <p class="refinement__paragraph">WEAPON RANK</p>
-                                <button class="stats__button">1</button>
-                                <button class="stats__button">2</button>
-                                <button class="stats__button">3</button>
-                                <button class="stats__button">4</button>
-                                <button class="stats__button">5</button>
+                                <button class="refinement__button stats__button" value="1">1</button>
+                                <button class="refinement__button stats__button" value="2">2</button>
+                                <button class="refinement__button stats__button" value="3">3</button>
+                                <button class="refinement__button stats__button" value="4">4</button>
+                                <button class="refinement__button stats__button" value="5">5</button>
                             </div>
                         </div>
                 
@@ -96,37 +96,37 @@
                             <form class="stats-form" action="">
                                 <div class="stats-form__container">
                                     <label class="stats-form__lbl" for="final-atk">ATK</label>
-                                    <input class="stats-form__input" id="final-atk" name="atk" type="text" autocomplete="off">
+                                    <input class="stats-form__input" id="final-atk" name="atk" type="button" autocomplete="off">
                                 </div>
                 
                                 <div class="stats-form__container">
                                     <label class="stats-form__lbl" for="final-def">DEF</label>
-                                    <input class="stats-form__input" id="final-def" name="def" type="text" autocomplete="off">
+                                    <input class="stats-form__input" id="final-def" name="def" type="button" autocomplete="off">
                                 </div>
                 
                                 <div class="stats-form__container">
                                     <label class="stats-form__lbl" for="final-hp">HP</label>
-                                    <input class="stats-form__input" id="final-hp" name="hp" type="text" autocomplete="off">
+                                    <input class="stats-form__input" id="final-hp" name="hp" type="button" autocomplete="off">
                                 </div>
                 
                                 <div class="stats-form__container">
                                     <label class="stats-form__lbl" for="final-em">EM</label>
-                                    <input class="stats-form__input" id="final-em" name="em" type="text" autocomplete="off">
+                                    <input class="stats-form__input" id="final-em" name="em" type="button" autocomplete="off">
                                 </div>
                 
                                 <div class="stats-form__container">
                                     <label class="stats-form__lbl" for="final-er">ER</label>
-                                    <input class="stats-form__input" id="final-er" name="er" type="text" autocomplete="off">
+                                    <input class="stats-form__input" id="final-er" name="er" type="button" autocomplete="off">
                                 </div>
                 
                                 <div class="stats-form__container">
                                     <label class="stats-form__lbl" for="final-cr">CR</label>
-                                    <input class="stats-form__input" id="final-cr" name="cr" type="text" autocomplete="off">
+                                    <input class="stats-form__input" id="final-cr" name="cr" type="button" autocomplete="off">
                                 </div>
                 
                                 <div class="stats-form__container">
                                     <label class="stats-form__lbl" for="final-cd">CD</label>
-                                    <input class="stats-form__input" id="final-cd" name="cd" type="text" autocomplete="off">
+                                    <input class="stats-form__input" id="final-cd" name="cd" type="button" autocomplete="off">
                                 </div>
                             </form>
                         </div>
@@ -139,66 +139,66 @@
                         <form class="stats-form" action="">
                             <div class="stats-form__container">
                                 <label class="stats-form__lbl" for="artifacts-atk">ATK</label>
-                                <input class="stats-form__input" id="atk" name="atk" type="text" autocomplete="off">
+                                <input class="stats-form__input" id="artifacts-atk" name="atk" type="number" autocomplete="off">
                             </div>
                 
                             <div class="stats-form__container">
                                 <label class="stats-form__lbl" for="artifacts-def">DEF</label>
-                                <input class="stats-form__input" id="artifacts-def" name="def" type="text" autocomplete="off">
+                                <input class="stats-form__input" id="artifacts-def" name="def" type="number" autocomplete="off">
                             </div>
                             <div class="stats-form__container">
                                 <label class="stats-form__lbl" for="artifacts-hp">HP</label>
-                                <input class="stats-form__input" id="artifacts-hp" name="hp" type="text" autocomplete="off">
+                                <input class="stats-form__input" id="artifacts-hp" name="hp" type="number" autocomplete="off">
                             </div>
                 
                             <div class="stats-form__container">
                                 <label class="stats-form__lbl" for="artifacts-em">EM</label>
-                                <input class="stats-form__input" id="artifacts-em" name="em" type="text" autocomplete="off">
+                                <input class="stats-form__input" id="artifacts-em" name="em" type="number" autocomplete="off">
                             </div>
                 
                             <div class="stats-form__container">
                                 <label class="stats-form__lbl" for="artifacts-er">ER</label>
-                                <input class="stats-form__input" id="artifacts-er" name="er" type="text" autocomplete="off">
+                                <input class="stats-form__input" id="artifacts-er" name="er" type="number" autocomplete="off">
                             </div>
                 
                             <div class="stats-form__container">
                                 <label class="stats-form__lbl" for="artifacts-cr">CR</label>
-                                <input class="stats-form__input" id="artifacts-cr" name="cr" type="text" autocomplete="off">
+                                <input class="stats-form__input" id="artifacts-cr" name="cr" type="number" autocomplete="off">
                             </div>
                 
                             <div class="stats-form__container">
                                 <label class="stats-form__lbl" for="artifacts-cd">CD</label>
-                                <input class="stats-form__input" id="artifacts-cd" name="cd" type="text" autocomplete="off">
+                                <input class="stats-form__input" id="artifacts-cd" name="cd" type="number" autocomplete="off">
                             </div>
                         </form>
                     </div>
                 
                     <div class="artifact-main-stats">
                         <div class="art-change">
-                            <p class="def-paragraph">CROWN</p>
-                            <button class="art-change__button">PYRO</button>
-                            <button class="art-change__button">HP</button>
-                            <button class="art-change__button">ATK</button>
-                            <button class="art-change__button">DEF</button>
-                            <button class="art-change__button">EM</button>
+                            <p class="def-paragraph">Circlet</p>
+                            <button class="art-change__button circlet-button" value="pyro">PYRO</button>
+                            <button class="art-change__button circlet-button" value="hp">HP</button>
+                            <button class="art-change__button circlet-button" value="atk">ATK</button>
+                            <button class="art-change__button circlet-button" value="def">DEF</button>
+                            <button class="art-change__button circlet-button" value="em">EM</button>
                         </div>
                 
                         <div class="art-change">
-                            <p class="def-paragraph">CROWN</p>
-                            <button class="art-change__button">PYRO</button>
-                            <button class="art-change__button">HP</button>
-                            <button class="art-change__button">ATK</button>
-                            <button class="art-change__button">DEF</button>
-                            <button class="art-change__button">EM</button>
+                            <p class="def-paragraph">Goblet</p>
+                            <button class="art-change__button goblet-button">PYRO</button>
+                            <button class="art-change__button goblet-button">HP</button>
+                            <button class="art-change__button goblet-button">ATK</button>
+                            <button class="art-change__button goblet-button">DEF</button>
+                            <button class="art-change__button goblet-button">EM</button>
                         </div>
                 
                         <div class="art-change">
-                            <p class="def-paragraph">CROWN</p>
-                            <button class="art-change__button">PYRO</button>
-                            <button class="art-change__button">HP</button>
-                            <button class="art-change__button">ATK</button>
-                            <button class="art-change__button">DEF</button>
-                            <button class="art-change__button">EM</button>
+                            <p class="def-paragraph">Sands</p>
+                            <button class="art-change__button sands-button">PYRO</button>
+                            <button class="art-change__button sands-button">HP</button>
+                            <button class="art-change__button sands-button">ATK</button>
+                            <button class="art-change__button sands-button">DEF</button>
+                            <button class="art-change__button sands-button">EM</button>
                         </div>
                     </div>
                 </div>
@@ -207,22 +207,22 @@
                     <p class="def-paragraph">Characters</p>
                     <div class="team-characters">
                         <div class="character">
-                            <img src="assets/img/character-icons/dehya_icon.png" alt="">
+                            <img src="assets/img/character-icons/dehya-icon.png" alt="">
                             <button class="character-weapon__button character-button">CHANGE</button>
                         </div>
 
                         <div class="character">
-                            <img src="assets/img/character-icons/dehya_icon.png" alt="">
+                            <img src="assets/img/character-icons/dehya-icon.png" alt="">
                             <button class="character-weapon__button character-button">CHANGE</button>
                         </div>
 
                         <div class="character">
-                            <img src="assets/img/character-icons/dehya_icon.png" alt="">
+                            <img src="assets/img/character-icons/dehya-icon.png" alt="">
                             <button class="character-weapon__button character-button">CHANGE</button>
                         </div>
                     
                         <div class="character">
-                            <img src="assets/img/character-icons/dehya_icon.png" alt="">
+                            <img src="assets/img/character-icons/dehya-icon.png" alt="">
                             <button class="character-weapon__button character-button">CHANGE</button>
                         </div>
                     </div>
@@ -380,28 +380,27 @@
                 </div>
 
                 <div class="character-change">
-                    <div class="character-change__character">
-                        <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
+                    <div class="character-change__character" id="ganyu">
+                        <img class="def-img" src="assets/img/character-icons/ganyu-icon.png" alt="">
                     </div>
 
-                    <div class="character-change__character">
-                        <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
+                    <div class="character-change__character" id="ayaka">
+                        <img class="def-img" src="assets/img/character-icons/ayaka-icon.png" alt="">
+                    </div>
+                    <div class="character-change__character" id="dehya">
+                        <img class="def-img" src="assets/img/character-icons/dehya-icon.png" alt="">
                     </div>
 
-                    <div class="character-change__character">
-                        <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
+                    <div class="character-change__character" id="raiden">
+                        <img class="def-img" src="assets/img/character-icons/raiden-icon.png" alt="">
                     </div>
 
-                    <div class="character-change__character">
-                        <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
+                    <div class="character-change__character" id="cyno">
+                        <img class="def-img" src="assets/img/character-icons/cyno-icon.png" alt="">
                     </div>
 
-                    <div class="character-change__character">
-                        <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
-                    </div>
-
-                    <div class="character-change__character">
-                        <img class="def-img" src="assets/img/character-icons/dehya_icon.png" alt="">
+                    <div class="character-change__character" id="hu-tao">
+                        <img class="def-img" src="assets/img/character-icons/hu-tao-icon.png" alt="">
                     </div>
                 </div>
             </div>
@@ -456,5 +455,6 @@
     </footer>
     
     <script src="assets/scripts/visual.js" defer></script>
+    <script type="module" src="assets/scripts/stats.js" defer></script>
 </body> 
 </html>

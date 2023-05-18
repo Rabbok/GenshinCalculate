@@ -1,13 +1,6 @@
-@import url(./layout/footer.css);
-@import url(./layout/header.css);
 @import url(./media.css);
-@import url(./calculator/artifacts.css);
-@import url(./calculator/character-change.css);
-@import url(./calculator/finaly-stats.css);
-@import url(./calculator/roration.css);
-@import url(./calculator/skils-dmg.css);
-@import url(./calculator/team.css);
-@import url(./calculator/weapon-tir.css);
+@import url(./layout/index.css);
+@import url(./calculator/index.css);
 
 :root {
     --gray: #6F6F6F;
@@ -115,11 +108,20 @@
 }
 
 .stats-form__input {
+    -webkit-appearance: none; margin: 0; width: 0;
+    appearance: none;
     width: 5rem;
     background-color: var(--gray);
     padding: 0.25rem;
     color: var(--white);
     text-shadow: 1px 1px 1px black;
+}
+
+.stats-form__input[type=number]::-webkit-inner-spin-button, 
+.stats-form__input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    width: 0;
 }
 
 .stats__button {

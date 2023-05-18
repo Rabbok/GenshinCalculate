@@ -1,107 +1,113 @@
-const visual = {
-    calculatorNavButtons: document.querySelectorAll('.calculator-nav__button'),
-    calculatorBlocks: document.querySelectorAll('.changes-block'),
-    changeBlock: document.querySelector('.character-change'),
-    statsChangeButtons: document.querySelectorAll('.stats__button'),
-    teamButtons: document.querySelectorAll('.open-button'),
-    teamBlocks: document.querySelectorAll('.team-stats__block'),
-    artifactBlocks: document.querySelectorAll('.artifact-set'),
-    charcterButton: document.querySelectorAll('.character-weapon__button'),
-    character: document.querySelectorAll(".character-change__character"),
-    statsFrom: document.querySelectorAll('.stats-form'),
-    artifactChangeButton: document.querySelectorAll('.art-change__button'),
-    activeBlock: 0,
-    activeTeamBlock: 0,
-    activeArtBlock: 0
-}
+const visual = () => {
+    const calculatorNavButtons = document.querySelectorAll('.calculator-nav__button');
+    const calculatorBlocks = document.querySelectorAll('.changes-block');
+    const changeBlock = document.querySelector('.character-change');
+    const statsChangeButtons = document.querySelectorAll('.stats__button');
+    const teamButtons = document.querySelectorAll('.open-button');
+    const teamBlocks = document.querySelectorAll('.team-stats__block');
+    const artifactBlocks = document.querySelectorAll('.artifact-set');
+    const charcterButton = document.querySelectorAll('.character-weapon__button');
+    const character = document.querySelectorAll(".character-change__character");
+    const artifactChangeButton = document.querySelectorAll('.art-change__button');
+    const activeCharacter = document.querySelector('.character-img');
+    let activeBlock = 0;
+    let activeTeamBlock = 0;
+    let activeArtBlock = 0;
 
-//Function for changing parameters in the stats block
+    //Function for changing parameters in the stats block
 
-const statsButtonHandler = (event) => {
-    const parentElement = event.target.parentNode;
-    parentElement.querySelectorAll('.stats__button').forEach((item) => {
-        item.classList.remove('active-element');
+    const statsButtonHandler = (event) => {
+        const parentElement = event.target.parentNode;
+        parentElement.querySelectorAll('.stats__button').forEach((item) => {
+            item.classList.remove('active-element');
+        })
+        parentElement.querySelectorAll('.art-change__button').forEach((item) => {
+            item.classList.remove('active-element');
+        })
+        event.target.classList.add('active-element');
+    }
+
+    //Function for changing calculator blocks
+
+    const reset = () => {
+        calculatorBlocks.forEach(calculatorBlock => calculatorBlock.classList.remove('active-block'));
+        calculatorBlocks[activeBlock].classList.add('active-block');
+        changeBlock.classList.remove('active-block');
+    }
+
+    //Functions for changing character
+
+    const characterChange = () => {
+        changeBlock.classList.add('active-block');
+        calculatorBlocks[activeBlock].classList.remove('active-block');
+    }
+
+    const characterChangeReset = () => {
+        changeBlock.classList.remove('active-block');
+        calculatorBlocks[activeBlock].classList.add('active-block');
+    }
+
+    //Functions for team stats
+
+    const teamStatsHendler = () => {
+        teamBlocks[activeTeamBlock].classList.toggle('active-block');
+    }
+
+    //Function for changing artifact blocks
+
+    const artifactHandler = () => {
+        artifactBlocks[activeArtBlock].classList.toggle('active-element');
+        artifactBlocks[activeArtBlock].querySelectorAll('.artifact-set__description').forEach((deskBlock) => {
+            deskBlock.classList.remove('active-element');
+        });
+    }
+
+
+    calculatorNavButtons.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            activeBlock = index;
+            reset()
+        })
     })
-    parentElement.querySelectorAll('.art-change__button').forEach((item) => {
-        item.classList.remove('active-element');
-    })
-    event.target.classList.add('active-element');
-}
 
-//Function for changing calculator blocks
-
-const reset = () => {
-    visual.calculatorBlocks.forEach(calculatorBlock => calculatorBlock.classList.remove('active-block'));
-    visual.calculatorBlocks[visual.activeBlock].classList.add('active-block');
-    visual.changeBlock.classList.remove('active-block');
-}
-
-//Functions for changing character
-
-const characterChange = () => {
-    visual.changeBlock.classList.add('active-block');
-    visual.calculatorBlocks[visual.activeBlock].classList.remove('active-block');
-}
-
-const characterChangeReset = () => {
-    visual.changeBlock.classList.remove('active-block');
-    visual.calculatorBlocks[visual.activeBlock].classList.add('active-block');
-}
-
-//Functions for team stats
-
-const teamStatsHendler = () => {
-    visual.teamBlocks[visual.activeTeamBlock].classList.toggle('active-block');
-}
-
-//Function for changing artifact blocks
-
-const artifactHandler = () => {
-    visual.artifactBlocks[visual.activeArtBlock].classList.toggle('active-element');
-    visual.artifactBlocks[visual.activeArtBlock].querySelectorAll('.artifact-set__description').forEach((deskBlock) => {
-        deskBlock.classList.remove('active-element');
+    charcterButton.forEach((item) => {
+        item.addEventListener('click', characterChange);
     });
+
+    character.forEach((item) => {
+        item.addEventListener('click', (event) => {
+            activeCharacter.src = 'assets/img/character-icons/' + event.target.parentNode.id + '-icon.png';
+            characterChangeReset();
+        });
+    });
+
+    character.forEach((item) => {
+        item.addEventListener('submit', (event) => {
+            event.preventDefault();
+        });
+    })
+
+    statsChangeButtons.forEach((item) => {
+        item.addEventListener('click', statsButtonHandler);
+    })
+
+    artifactChangeButton.forEach((item) => {
+        item.addEventListener('click', statsButtonHandler);
+    })
+
+    teamButtons.forEach((teamButton, index) => {
+        teamButton.addEventListener('click', () => {
+            activeTeamBlock = index;
+            teamStatsHendler();
+        })
+    })
+
+    artifactBlocks.forEach((artifactBlock, index) => {
+        artifactBlock.addEventListener('click', () => {
+            activeArtBlock = index;
+            artifactHandler();
+        })
+    })
 }
 
-visual.calculatorNavButtons.forEach((item, index) => {
-    item.addEventListener('click', () => {
-        visual.activeBlock = index;
-        reset()
-    })
-})
-
-visual.charcterButton.forEach((item) => {
-    item.addEventListener('click', characterChange);
-});
-
-visual.character.forEach((item) => {
-    item.addEventListener('click', characterChangeReset);
-});
-
-visual.character.forEach((item) => {
-    item.addEventListener('submit', (event) => {
-        event.preventDefault();
-    });
-})
-
-visual.statsChangeButtons.forEach((item) => {
-    item.addEventListener('click', statsButtonHandler);
-})
-
-visual.artifactChangeButton.forEach((item) => {
-    item.addEventListener('click', statsButtonHandler);
-})
-
-visual.teamButtons.forEach((teamButton, index) => {
-    teamButton.addEventListener('click', () => {
-        visual.activeTeamBlock = index;
-        teamStatsHendler();
-    })
-})
-
-visual.artifactBlocks.forEach((artifactBlock, index) => {
-    artifactBlock.addEventListener('click', () => {
-        visual.activeArtBlock = index;
-        artifactHandler();
-    })
-})
+visual();

@@ -11,16 +11,3 @@
     height: 4.5rem;
     cursor: pointer;
 }
-
-.weapon-change {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 4.5rem);
-    gap: 0.6rem;
-    justify-content: center;
-}
-
-.weapon-change__character {
-    width: 4.5rem;
-    height: 4.5rem;
-    cursor: pointer;
-}
